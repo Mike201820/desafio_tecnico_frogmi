@@ -1,0 +1,2 @@
+class SismologicalEvent < ApplicationRecord
+end

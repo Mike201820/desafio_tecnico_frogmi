@@ -1,0 +1,2 @@
+class Sismo < ApplicationRecord
+end

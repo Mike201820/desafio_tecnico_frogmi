@@ -1,0 +1,31 @@
+<!-- app/views/features/index.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Features</title>
+</head>
+<body>
+  <h1>Lista de características sísmicas</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Magnitude</th>
+        <th>Place</th>
+        <!-- Agrega más encabezados según tus necesidades -->
+      </tr>
+    </thead>
+    <tbody>
+      <% @sismos.each do |sismo| %>
+        <tr>
+          <td><%= sismo.id %></td>
+          <td><%= sismo.magnitude %></td>
+          <td><%= sismo.place %></td>
+          <!-- Agrega más columnas según tus necesidades -->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>
